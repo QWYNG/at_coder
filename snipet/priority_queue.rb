@@ -76,7 +76,7 @@ end
 class PriorityQueue
   attr_reader :heap
 
-  def initialize(direction, default = nil)
+  def initialize(direction, default = [])
     case direction
     when :max, :min
       @heap = Heap.new(default, direction)
